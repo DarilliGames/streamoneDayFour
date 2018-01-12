@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+}
+
+.container{
+    background-color: grey;
+}
+
+.header{
+    background-color: red;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 30px;
+    z-index: 100;
+    
+}
+.navbar{
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: -100px;
+
+    
+}
+
+
+.navbar ul{
+    text-align: center;
+}
+
+
+.navbar ul li{
+    font-size: 30px;
+    border-bottom: solid 3px white; 
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    font-family: roboto;
+    color: #fff;
+    
+}
+li:active{
+    background-color: white;
+    
+}
+li:visited{
+    background-color: black;
+
+}
+li:last-child{
+    background-color: White;
+    
+}
+
+.pagecontents{
+    background-color: gray;
+    height: 300px;
+    padding-top: 100px;
+    margin:10px;
+    border-radius: 15px;
+}
+
+@media screen and (min-width:601px){
+    .navbar{
+        left: 10px;
+    }
+    .navbar:hover{
+        transform: translate(0px, 130px);
+        transition: transform ease 10s, 2s;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .navbar{
+        width:100%;
+        display: inline-block;
+        margin:0px;
+        
+        
+        
+        
+    }
+    .navbar>ul{
+        position: absolute;
+        width:100%;
+        top: 130px;
+        background-color: green;
+        display: inline-block;
+        margin:0px;    
+        
+       
+    }
+    .navbar>ul>li{
+        display: inline-block;
+        margin: 0px;
+        
+    }
+    .pagecontents{
+        margin: 0px;
+
+    }
+    li:last-child{
+        position: absolute;
+        top: -100px;
+    }
+    
+}
